@@ -16,16 +16,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * @author stefan.kujovic
  */
 public class OsobaTest {
-    
-    
-    @BeforeAll
-    public static void setUpClass() {
-    }
-    
-    @AfterAll
-    public static void tearDownClass() {
-    }
-    
+ 
     @BeforeEach
     public void setUp() {
     }
@@ -36,8 +27,11 @@ public class OsobaTest {
 
     @org.junit.jupiter.api.Test
     public void testSomeMethod() {
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        Osoba o = new Osoba();
+        
+        o.setIme("Pera");
+        
+        assertEquals("Zika" , o.getIme());
     }
     
 }
